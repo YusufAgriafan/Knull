@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+  <meta name="description" content="Knull — information and policies for the Discord application.">
+  <title>Knull — Discord Application</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080d19;
+      --line: #263650;
+      --text: #edf4ff;
+      --muted: #a9b9d2;
+      --blue: #78aaff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at top, #14294a 0, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 8vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -.05em;
+      margin: .5rem 0 1rem;
+    }
+
+    p { color: var(--muted); }
+
+    .lead {
+      font-size: 1.15rem;
+      max-width: 650px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 34px 0;
+    }
+
+    .card {
+      display: block;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(16, 26, 45, .8);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform .18s, border-color .18s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--blue);
+    }
+
+    .card strong {
+      display: block;
+      font-size: 1.1rem;
+    }
+
+    .card span {
+      display: block;
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Discord Application</div>
+
+    <h1>Knull<span style="color: var(--blue)">.</span></h1>
+
+    <p class="lead">
+      Information and policies for the Knull Discord application.
+      Use the links below to review the application's terms and
+      privacy information.
+    </p>
+
+    <section class="cards" aria-label="Policies">
+      <a class="card" href="./terms.html">
+        <strong>Terms of Service ↗</strong>
+        <span>Conditions for using the application.</span>
+      </a>
+
+      <a class="card" href="./privacy.html">
+        <strong>Privacy Policy ↗</strong>
+        <span>Information about data handling and privacy.</span>
+      </a>
+    </section>
+
+    <footer>
+      Knull Discord Application · Review the policy pages before use.
+    </footer>
+  </main>
+</body>
+</html>
